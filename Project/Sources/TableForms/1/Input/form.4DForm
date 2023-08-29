@@ -1,0 +1,146 @@
+{
+	"$4d": {
+		"version": "1",
+		"kind": "form"
+	},
+	"windowSizingX": "variable",
+	"windowSizingY": "variable",
+	"windowMinWidth": 0,
+	"windowMinHeight": 0,
+	"windowMaxWidth": 32767,
+	"windowMaxHeight": 32767,
+	"rightMargin": 20,
+	"bottomMargin": 20,
+	"events": [
+		"onLoad",
+		"onPageChange",
+		"onValidate",
+		"onClick",
+		"onDoubleClick",
+		"onOutsideCall",
+		"onBeginDragOver",
+		"onDragOver",
+		"onDrop",
+		"onAfterKeystroke",
+		"onMenuSelect",
+		"onPluginArea",
+		"onAfterEdit",
+		"onTimer",
+		"onBoundVariableChange"
+	],
+	"windowTitle": "window title",
+	"destination": "detailScreen",
+	"pages": [
+		{
+			"objects": {}
+		},
+		{
+			"objects": {
+				"label_name": {
+					"type": "text",
+					"text": "name:",
+					"top": 13,
+					"left": 10,
+					"width": 100,
+					"height": 17
+				},
+				"field_name": {
+					"type": "input",
+					"dataSource": "[Profiles:1]name:3",
+					"top": 13,
+					"left": 120,
+					"width": 250,
+					"height": 17
+				},
+				"WParea": {
+					"type": "write",
+					"top": 153,
+					"left": 46,
+					"width": 880,
+					"height": 590,
+					"sizingX": "grow",
+					"sizingY": "grow",
+					"dataSource": "[Profiles:1]wp:2",
+					"hideFocusRing": true,
+					"scrollbarVertical": "automatic",
+					"scrollbarHorizontal": "automatic",
+					"dpi": 0,
+					"borderStyle": "none",
+					"method": "ObjectMethods/WParea.4dm",
+					"events": [
+						"onLoad",
+						"onLosingFocus",
+						"onGettingFocus",
+						"onSelectionChange",
+						"onAfterEdit"
+					]
+				},
+				"WPtoolbar": {
+					"type": "subform",
+					"top": 63,
+					"left": 46,
+					"width": 880,
+					"height": 90,
+					"sizingX": "grow",
+					"detailForm": "WP_Toolbar",
+					"focusable": false,
+					"deletableInList": false,
+					"doubleClickInRowAction": "editSubrecord",
+					"doubleClickInEmptyAreaAction": "addSubrecord",
+					"selectionMode": "multiple",
+					"printFrame": "variable"
+				},
+				"Button": {
+					"type": "button",
+					"top": 755,
+					"left": 776,
+					"width": 70,
+					"height": 20,
+					"sizingX": "move",
+					"sizingY": "move",
+					"dataSource": "Button",
+					"action": "cancel",
+					"shortcutKey": "[Esc]",
+					"text": "Cancel",
+					"events": [
+						"onClick"
+					]
+				},
+				"Button1": {
+					"type": "button",
+					"top": 755,
+					"left": 856,
+					"width": 70,
+					"height": 20,
+					"sizingX": "move",
+					"sizingY": "move",
+					"dataSource": "Button",
+					"action": "accept",
+					"shortcutKey": "[Enter]",
+					"text": "OK",
+					"defaultButton": true,
+					"events": [
+						"onClick"
+					]
+				},
+				"label_name1": {
+					"type": "text",
+					"text": "Page:",
+					"top": 13,
+					"left": 566,
+					"width": 100,
+					"height": 17
+				},
+				"field_name1": {
+					"type": "input",
+					"dataSource": "[INFO:1]pageNumber:4",
+					"top": 13,
+					"left": 676,
+					"width": 250,
+					"height": 17
+				}
+			}
+		}
+	],
+	"geometryStamp": 12
+}

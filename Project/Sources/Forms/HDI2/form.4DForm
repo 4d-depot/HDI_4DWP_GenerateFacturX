@@ -1,0 +1,501 @@
+{
+	"destination": "detailScreen",
+	"windowMinWidth": 920,
+	"windowMaxWidth": 32000,
+	"windowMinHeight": 640,
+	"windowMaxHeight": 32000,
+	"width": 1200,
+	"height": 800,
+	"menuBar": "Menu Bar #1",
+	"markerHeader": 15,
+	"markerBody": 200,
+	"markerBreak": 220,
+	"markerFooter": 240,
+	"events": [
+		"onLoad",
+		"onPageChange"
+	],
+	"method": "method.4dm",
+	"pageFormat": {
+		"paperName": "A4",
+		"paperWidth": "842pt",
+		"paperHeight": "595pt"
+	},
+	"pages": [
+		{
+			"objects": {
+				"Tab Control": {
+					"type": "tab",
+					"top": 20,
+					"left": 20,
+					"width": 1160,
+					"height": 760,
+					"sizingX": "grow",
+					"sizingY": "grow",
+					"dataSource": "Form:C1466.tabs",
+					"dataSourceTypeHint": "object",
+					"action": "gotoPage",
+					"events": [
+						"onClick"
+					]
+				},
+				"Line": {
+					"type": "line",
+					"top": -20,
+					"left": 600,
+					"height": 910,
+					"visibility": "hidden",
+					"sizingY": "grow",
+					"stroke": "#800080",
+					"strokeDashArray": "1 1"
+				}
+			}
+		},
+		{
+			"objects": {
+				"WParea": {
+					"type": "write",
+					"top": 110,
+					"left": 60,
+					"width": 1080,
+					"height": 630,
+					"sizingX": "grow",
+					"sizingY": "grow",
+					"dataSource": "WParea",
+					"hideFocusRing": true,
+					"scrollbarVertical": "hidden",
+					"scrollbarHorizontal": "hidden",
+					"borderStyle": "none",
+					"method": "ObjectMethods/WParea.4dm",
+					"events": [
+						"onLoad",
+						"onLosingFocus",
+						"onGettingFocus",
+						"onSelectionChange",
+						"onAfterEdit"
+					],
+					"showHeaders": false,
+					"showFooters": false,
+					"showHorizontalRuler": false,
+					"showVerticalRuler": false,
+					"layoutMode": "embedded",
+					"enterable": false
+				}
+			}
+		},
+		{
+			"objects": {
+				"Ovale": {
+					"type": "oval",
+					"top": 45,
+					"left": 52,
+					"width": 32,
+					"height": 32,
+					"strokeWidth": 3,
+					"stroke": "#3EA9F5"
+				},
+				"Rectangle1": {
+					"type": "rectangle",
+					"top": 467,
+					"left": 43,
+					"width": 446,
+					"height": 250,
+					"borderRadius": 16,
+					"strokeWidth": 3,
+					"sizingY": "grow"
+				},
+				"Texte1": {
+					"type": "text",
+					"text": "Factur-x (xml)",
+					"top": 447,
+					"left": 59,
+					"width": 180,
+					"height": 16,
+					"fontWeight": "bold",
+					"textAlign": "center"
+				},
+				"Rectangle": {
+					"type": "rectangle",
+					"top": 117,
+					"left": 43,
+					"width": 446,
+					"height": 250,
+					"borderRadius": 16,
+					"strokeWidth": 3
+				},
+				"label_name": {
+					"type": "text",
+					"text": "Template name:",
+					"top": 127,
+					"left": 1379,
+					"width": 115,
+					"height": 17,
+					"sizingX": "fixed",
+					"textAlign": "right",
+					"sizingY": "fixed"
+				},
+				"field_name": {
+					"type": "input",
+					"dataSource": "[Invoice:2]name:2",
+					"top": 127,
+					"left": 1499,
+					"width": 260,
+					"height": 17,
+					"fontWeight": "bold",
+					"sizingX": "fixed",
+					"sizingY": "fixed"
+				},
+				"field_context": {
+					"type": "input",
+					"dataSource": "Form:C1466.context",
+					"top": 127,
+					"left": 54,
+					"width": 410,
+					"height": 230,
+					"sizingX": "fixed",
+					"sizingY": "fixed",
+					"enterable": false,
+					"scrollbarVertical": "visible",
+					"fill": "automatic",
+					"borderStyle": "none"
+				},
+				"WParea1": {
+					"type": "write",
+					"top": 57,
+					"left": 520,
+					"width": 640,
+					"height": 660,
+					"sizingX": "grow",
+					"sizingY": "grow",
+					"dataSource": "Form:C1466.template",
+					"hideFocusRing": true,
+					"scrollbarVertical": "automatic",
+					"scrollbarHorizontal": "automatic",
+					"dpi": 0,
+					"borderStyle": "none",
+					"method": "ObjectMethods/WParea1.4dm",
+					"events": [
+						"onLoad",
+						"onLosingFocus",
+						"onGettingFocus",
+						"onSelectionChange",
+						"onAfterEdit"
+					],
+					"showHorizontalRuler": false,
+					"showVerticalRuler": false,
+					"zoom": "75"
+				},
+				"Button": {
+					"type": "button",
+					"top": 918,
+					"left": 1220,
+					"width": 70,
+					"height": 20,
+					"sizingX": "move",
+					"sizingY": "move",
+					"dataSource": "Button",
+					"action": "cancel",
+					"shortcutKey": "[Esc]",
+					"text": "Cancel",
+					"events": [
+						"onClick"
+					],
+					"focusable": false
+				},
+				"Button1": {
+					"type": "button",
+					"top": 918,
+					"left": 1300,
+					"width": 70,
+					"height": 20,
+					"sizingX": "move",
+					"sizingY": "move",
+					"dataSource": "Button",
+					"action": "accept",
+					"shortcutKey": "[Enter]",
+					"text": "OK",
+					"defaultButton": true,
+					"events": [
+						"onClick"
+					],
+					"focusable": false
+				},
+				"field_context1": {
+					"type": "input",
+					"dataSource": "Form:C1466.xml",
+					"top": 477,
+					"left": 54,
+					"width": 410,
+					"height": 227,
+					"sizingX": "fixed",
+					"sizingY": "grow",
+					"scrollbarVertical": "visible",
+					"enterable": false,
+					"borderStyle": "none"
+				},
+				"Button5": {
+					"type": "button",
+					"text": "{Export XML}",
+					"top": 739,
+					"left": 100,
+					"width": 120,
+					"height": 20,
+					"events": [
+						"onClick"
+					],
+					"method": "ObjectMethods/Button5.4dm",
+					"sizingY": "move",
+					"sizingX": "fixed",
+					"focusable": false,
+					"fontSize": 11,
+					"stroke": "#9400d3"
+				},
+				"Texte": {
+					"type": "text",
+					"text": "Context (json)",
+					"top": 97,
+					"left": 59,
+					"width": 180,
+					"height": 16,
+					"fontWeight": "bold",
+					"textAlign": "center"
+				},
+				"Button4": {
+					"type": "button",
+					"text": "Create Factur-X",
+					"top": 739,
+					"left": 319,
+					"width": 161,
+					"height": 20,
+					"events": [
+						"onClick"
+					],
+					"method": "ObjectMethods/Button4.4dm",
+					"sizingY": "move",
+					"sizingX": "fixed",
+					"focusable": false,
+					"stroke": "#ff6347"
+				},
+				"Image statique1": {
+					"type": "picture",
+					"top": 360,
+					"left": 451,
+					"width": 64,
+					"height": 64,
+					"picture": "/RESOURCES/Arrows/ArrowRightBottom.png"
+				},
+				"Image statique2": {
+					"type": "picture",
+					"top": 419,
+					"left": 426,
+					"width": 64,
+					"height": 74,
+					"picture": "/RESOURCES/Arrows/ArrowDown.png"
+				},
+				"Button2": {
+					"type": "button",
+					"text": "Set context",
+					"top": 385,
+					"left": 270,
+					"width": 160,
+					"height": 20,
+					"events": [
+						"onClick"
+					],
+					"method": "ObjectMethods/Button2.4dm",
+					"sizingY": "fixed",
+					"focusable": false,
+					"sizingX": "fixed"
+				},
+				"Texte2": {
+					"type": "text",
+					"text": "1",
+					"top": 49,
+					"left": 56,
+					"width": 24,
+					"height": 24,
+					"fontFamily": "Arial",
+					"fontSize": 20,
+					"fontWeight": "bold",
+					"textAlign": "center",
+					"stroke": "#3EA9F5"
+				},
+				"Bouton": {
+					"type": "button",
+					"text": "XML Validation web site",
+					"top": 739,
+					"left": 520,
+					"width": 252,
+					"height": 20,
+					"events": [
+						"onClick"
+					],
+					"method": "ObjectMethods/Bouton.4dm",
+					"sizingY": "move",
+					"focusable": false
+				},
+				"Button6": {
+					"type": "button",
+					"text": "German",
+					"top": 55,
+					"left": 244,
+					"width": 116,
+					"height": 20,
+					"events": [
+						"onClick"
+					],
+					"focusable": false
+				},
+				"Button7": {
+					"type": "button",
+					"text": "French",
+					"top": 55,
+					"left": 374,
+					"width": 116,
+					"height": 20,
+					"events": [
+						"onClick"
+					],
+					"method": "ObjectMethods/Button7.4dm",
+					"focusable": false
+				},
+				"Text": {
+					"type": "text",
+					"text": "Load template",
+					"top": 55,
+					"left": 123,
+					"width": 89,
+					"height": 16
+				},
+				"Button3": {
+					"type": "button",
+					"text": "Build XML",
+					"top": 425,
+					"left": 270,
+					"width": 160,
+					"height": 20,
+					"events": [
+						"onClick"
+					],
+					"method": "ObjectMethods/Button3.4dm",
+					"sizingY": "fixed",
+					"focusable": false,
+					"sizingX": "fixed"
+				},
+				"Ovale2": {
+					"type": "oval",
+					"top": 379,
+					"left": 52,
+					"width": 32,
+					"height": 32,
+					"strokeWidth": 3,
+					"stroke": "#3EA9F5"
+				},
+				"Texte4": {
+					"type": "text",
+					"text": "2",
+					"top": 383,
+					"left": 56,
+					"width": 24,
+					"height": 24,
+					"fontFamily": "Arial",
+					"fontSize": 20,
+					"fontWeight": "bold",
+					"textAlign": "center",
+					"stroke": "#3EA9F5"
+				},
+				"Ovale3": {
+					"type": "oval",
+					"top": 419,
+					"left": 52,
+					"width": 32,
+					"height": 32,
+					"strokeWidth": 3,
+					"stroke": "#3EA9F5"
+				},
+				"Texte5": {
+					"type": "text",
+					"text": "3",
+					"top": 423,
+					"left": 56,
+					"width": 24,
+					"height": 24,
+					"fontFamily": "Arial",
+					"fontSize": 20,
+					"fontWeight": "bold",
+					"textAlign": "center",
+					"stroke": "#3EA9F5"
+				},
+				"Ovale1": {
+					"type": "oval",
+					"top": 731,
+					"left": 52,
+					"width": 32,
+					"height": 32,
+					"strokeWidth": 3,
+					"stroke": "#3EA9F5",
+					"sizingY": "move"
+				},
+				"Texte3": {
+					"type": "text",
+					"text": "4",
+					"top": 736,
+					"left": 56,
+					"width": 24,
+					"height": 24,
+					"fontFamily": "Arial",
+					"fontSize": 20,
+					"fontWeight": "bold",
+					"textAlign": "center",
+					"stroke": "#3EA9F5",
+					"sizingY": "move"
+				},
+				"Bouton1": {
+					"type": "button",
+					"text": "Reset",
+					"top": 739,
+					"left": 1000,
+					"width": 160,
+					"height": 20,
+					"events": [
+						"onClick"
+					],
+					"method": "ObjectMethods/Bouton1.4dm",
+					"sizingY": "move",
+					"sizingX": "move",
+					"focusable": false
+				}
+			}
+		},
+		{
+			"objects": {
+				"Check Box": {
+					"type": "checkbox",
+					"text": "Trace code",
+					"top": 568,
+					"left": 1172,
+					"width": 188,
+					"height": 20,
+					"events": [
+						"onClick"
+					],
+					"dataSource": "Form:C1466.trace",
+					"focusable": false,
+					"sizingY": "move"
+				}
+			}
+		}
+	],
+	"$4d": {
+		"version": "1",
+		"kind": "form"
+	},
+	"editor": {
+		"activeView": "View 1",
+		"defaultView": "View 1",
+		"views": {
+			"View 1": {}
+		}
+	},
+	"geometryStamp": 907
+}
