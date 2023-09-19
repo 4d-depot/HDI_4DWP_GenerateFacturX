@@ -136,7 +136,7 @@
 				},
 				"field_name": {
 					"type": "input",
-					"dataSource": "[Invoice:2]name:2",
+					"dataSource": "[Templates:2]name:2",
 					"top": 127,
 					"left": 1499,
 					"width": 260,
@@ -344,7 +344,8 @@
 					"events": [
 						"onClick"
 					],
-					"focusable": false
+					"focusable": false,
+					"method": "ObjectMethods/Button6.4dm"
 				},
 				"Button7": {
 					"type": "button",
@@ -466,24 +467,6 @@
 					"focusable": false
 				}
 			}
-		},
-		{
-			"objects": {
-				"Check Box": {
-					"type": "checkbox",
-					"text": "Trace code",
-					"top": 568,
-					"left": 1172,
-					"width": 188,
-					"height": 20,
-					"events": [
-						"onClick"
-					],
-					"dataSource": "Form:C1466.trace",
-					"focusable": false,
-					"sizingY": "move"
-				}
-			}
 		}
 	],
 	"$4d": {
@@ -497,5 +480,5 @@
 			"View 1": {}
 		}
 	},
-	"geometryStamp": 907
+	"geometryStamp": 908
 }

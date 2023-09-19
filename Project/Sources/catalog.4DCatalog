@@ -22,16 +22,27 @@
 			</editor_table_info>
 		</table_extra>
 	</table>
-	<table name="Invoices" uuid="1F31FDDAC2234964A15E2523705A8FB0" id="2">
+	<table name="Templates" uuid="1F31FDDAC2234964A15E2523705A8FB0" id="2">
 		<field name="ID" uuid="BF29777A76EA49E78166F59417451D29" type="4" unique="true" autosequence="true" not_null="true" id="1"/>
 		<field name="name" uuid="F0CCD76B9501478AA2CD28CBDAEDE169" type="10" limiting_length="255" id="2"/>
 		<field name="template" uuid="1990AB7F399E43D1B045BE9F8DB5AA95" type="21" blob_switch_size="2147483647" id="3"/>
-		<field name="context" uuid="D6171259D1BE47E09D3E2AF48D3A04A2" type="21" blob_switch_size="2147483647" id="4"/>
 		<primary_key field_name="ID" field_uuid="BF29777A76EA49E78166F59417451D29"/>
 		<table_extra output_form="output" input_form="input">
 			<editor_table_info displayable_fields_count="6">
 				<color red="255" green="255" blue="255" alpha="0"/>
 				<coordinates left="284.240234375" top="0.2915954589844" width="120" height="167.33203125"/>
+			</editor_table_info>
+		</table_extra>
+	</table>
+	<table name="Invoices" uuid="932C088C615A41E898F0C488AFAE1D49" id="3">
+		<field name="ID" uuid="77439EB3DDFA4662BB422A5E2290887D" type="4" unique="true" autosequence="true" not_null="true" id="1"/>
+		<field name="name" uuid="9C00FADB6F484AC7A72DB1F035861B4B" type="10" limiting_length="255" id="2"/>
+		<field name="context" uuid="AC83231E37864B9A930CDDD94E48E7D1" type="21" blob_switch_size="2147483647" id="3"/>
+		<primary_key field_name="ID" field_uuid="77439EB3DDFA4662BB422A5E2290887D"/>
+		<table_extra input_form="Input" output_form="output">
+			<editor_table_info displayable_fields_count="6">
+				<color red="255" green="255" blue="255" alpha="0"/>
+				<coordinates left="502.08203125" top="0.83984375" width="120" height="167.33203125"/>
 			</editor_table_info>
 		</table_extra>
 	</table>
@@ -42,7 +53,12 @@
 	</index>
 	<index kind="regular" unique_keys="true" uuid="866D70A1B84A454FA7CAA2C0981170F3" type="7">
 		<field_ref uuid="BF29777A76EA49E78166F59417451D29" name="ID">
-			<table_ref uuid="1F31FDDAC2234964A15E2523705A8FB0" name="Invoices"/>
+			<table_ref uuid="1F31FDDAC2234964A15E2523705A8FB0" name="Templates"/>
+		</field_ref>
+	</index>
+	<index kind="regular" unique_keys="true" uuid="BC1BF90E202046A9ACCEBB5B11F15A42" type="7">
+		<field_ref uuid="77439EB3DDFA4662BB422A5E2290887D" name="ID">
+			<table_ref uuid="932C088C615A41E898F0C488AFAE1D49" name="Invoices"/>
 		</field_ref>
 	</index>
 	<base_extra>

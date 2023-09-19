@@ -3,11 +3,11 @@
 
 var $c; $item; $tax : Object
 
-[Invoices:2]context:4:={}
-$c:=[Invoices:2]context:4
+[Invoice:3]context:3:={}
+$c:=[Invoice:3]context:3
 
 Case of 
-	: ([Invoices:2]name:2="French sample")
+	: ([Invoice:3]name:2="French sample")
 		
 		$c.invoice:=New object:C1471
 		$c.invoice.ID:="AC-2023-1234"
@@ -20,16 +20,16 @@ Case of
 		
 		$c.invoice.lineTotalAmount:=165
 		$c.invoice.taxBasisTotalAmount:=165
-		$c.invoice.taxTotalAmount:=15
-		$c.invoice.grandTotalAmount:=180
+		$c.invoice.taxTotalAmount:=15.6
+		$c.invoice.grandTotalAmount:=180.6
 		$c.invoice.totalPrepaidAmount:=100
-		$c.invoice.duePayableAmount:=80
+		$c.invoice.duePayableAmount:=80.6
 		$c.invoice.currencyCode:="EUR"
 		$c.invoice.typeCode:=30  // see ram:TypeCode
 		$c.invoice.dateTimeStringFormat:=102
 		
 		$c.seller:=New object:C1471
-		$c.seller.name:="Alpha cars"
+		$c.seller.name:="Alpha desk"
 		$c.seller.address:="48 rue des oliviers"
 		$c.seller.zipCode:="75018"
 		$c.seller.city:="Paris"
@@ -72,7 +72,7 @@ Case of
 		$item.chargeAmount:=10.5
 		$item.billedQuantity:=10
 		$item.unitCode:="LTR"
-		$item.rateApplicablePercent:=5
+		$item.rateApplicablePercent:=5.5
 		$item.lineTotalAmount:=105
 		$c.items.push($item)
 		
@@ -83,7 +83,7 @@ Case of
 		$item.chargeAmount:=3
 		$item.billedQuantity:=5
 		$item.unitCode:="LTR"
-		$item.rateApplicablePercent:=5
+		$item.rateApplicablePercent:=5.5
 		$item.lineTotalAmount:=15
 		$c.items.push($item)
 		
@@ -107,12 +107,12 @@ Case of
 		$c.tradeTaxes.push($tax)
 		
 		$tax:=New object:C1471
-		$tax.rateApplicablePercent:=5
+		$tax.rateApplicablePercent:=5.5
 		$tax.basisAmount:=120
-		$tax.calculatedAmount:=6
+		$tax.calculatedAmount:=6.6
 		$c.tradeTaxes.push($tax)
 		
-	: ([Invoices:2]name:2="German sample")
+	: ([Templates:2]name:2="German sample")
 		
 		ALERT:C41("must be filled")
 		

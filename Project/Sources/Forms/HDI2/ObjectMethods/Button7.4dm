@@ -1,8 +1,5 @@
-var $template : cs:C1710.InvoicesEntity
-
-$template:=ds:C1482.Invoices.query("name = :1"; "French sample").first()
-
-Form:C1466.context:=$template.context
-Form:C1466.template:=$template.template
+Form:C1466.template:=ds:C1482.Templates.query("name = :1"; "French sample").first().template
+Form:C1466.context:=ds:C1482.Invoices.query("name = :1"; "French sample").first().context
+Form:C1466.xml:=""
 
 
