@@ -1,8 +1,8 @@
 {
 	"destination": "detailScreen",
-	"windowMinWidth": 920,
+	"windowMinWidth": 1200,
 	"windowMaxWidth": 32000,
-	"windowMinHeight": 640,
+	"windowMinHeight": 800,
 	"windowMaxHeight": 32000,
 	"width": 1200,
 	"height": 800,
@@ -56,8 +56,8 @@
 				"WParea": {
 					"type": "write",
 					"top": 110,
-					"left": 60,
-					"width": 1080,
+					"left": 80,
+					"width": 1040,
 					"height": 630,
 					"sizingX": "grow",
 					"sizingY": "grow",
@@ -98,7 +98,7 @@
 					"type": "rectangle",
 					"top": 467,
 					"left": 43,
-					"width": 446,
+					"width": 486,
 					"height": 250,
 					"borderRadius": 16,
 					"strokeWidth": 3,
@@ -118,7 +118,7 @@
 					"type": "rectangle",
 					"top": 117,
 					"left": 43,
-					"width": 446,
+					"width": 486,
 					"height": 250,
 					"borderRadius": 16,
 					"strokeWidth": 3
@@ -150,7 +150,7 @@
 					"dataSource": "Form:C1466.context",
 					"top": 127,
 					"left": 54,
-					"width": 410,
+					"width": 450,
 					"height": 230,
 					"sizingX": "fixed",
 					"sizingY": "fixed",
@@ -162,8 +162,8 @@
 				"WParea1": {
 					"type": "write",
 					"top": 57,
-					"left": 520,
-					"width": 640,
+					"left": 560,
+					"width": 600,
 					"height": 660,
 					"sizingX": "grow",
 					"sizingY": "grow",
@@ -225,7 +225,7 @@
 					"dataSource": "Form:C1466.xml",
 					"top": 477,
 					"left": 54,
-					"width": 410,
+					"width": 450,
 					"height": 227,
 					"sizingX": "fixed",
 					"sizingY": "grow",
@@ -324,7 +324,7 @@
 					"type": "button",
 					"text": "XML Validation web site",
 					"top": 739,
-					"left": 520,
+					"left": 560,
 					"width": 252,
 					"height": 20,
 					"events": [
@@ -480,5 +480,5 @@
 			"View 1": {}
 		}
 	},
-	"geometryStamp": 908
+	"geometryStamp": 932
 }

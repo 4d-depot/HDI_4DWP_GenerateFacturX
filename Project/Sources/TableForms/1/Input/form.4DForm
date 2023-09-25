@@ -138,9 +138,26 @@
 					"left": 676,
 					"width": 250,
 					"height": 17
+				},
+				"Button2": {
+					"type": "button",
+					"top": 755,
+					"left": 46,
+					"width": 170,
+					"height": 20,
+					"sizingX": "move",
+					"sizingY": "move",
+					"dataSource": "Button",
+					"action": "",
+					"shortcutKey": "[Esc]",
+					"text": "Transparent bgnd",
+					"events": [
+						"onClick"
+					],
+					"method": "ObjectMethods/Button2.4dm"
 				}
 			}
 		}
 	],
-	"geometryStamp": 12
+	"geometryStamp": 24
 }
