@@ -110,7 +110,7 @@
       <ram:SpecifiedTradeSettlementPaymentMeans>
         <ram:TypeCode>30</ram:TypeCode>
         <ram:PayeePartyCreditorFinancialAccount>
-          <ram:IBANID>FR2012421242124212421242124</ram:IBANID>
+          <ram:IBANID>XXX-IBANID-XXX</ram:IBANID>
         </ram:PayeePartyCreditorFinancialAccount>
       </ram:SpecifiedTradeSettlementPaymentMeans>
       
@@ -134,8 +134,8 @@
         <ram:TaxBasisTotalAmount>XXX-TaxBasisTotalAmount-XXX</ram:TaxBasisTotalAmount>
         <ram:TaxTotalAmount currencyID="XXX-EUR-XXX">XXX-TaxTotalAmount-XXX</ram:TaxTotalAmount>
         <ram:GrandTotalAmount>XXX-GrandTotalAmount-XXX</ram:GrandTotalAmount>
-        <ram:TotalPrepaidAmount>201.00</ram:TotalPrepaidAmount>
-        <ram:DuePayableAmount>470.15</ram:DuePayableAmount>
+        <ram:TotalPrepaidAmount>XXX-GrandTotalAmount-XXX</ram:TotalPrepaidAmount>
+        <ram:DuePayableAmount>XXX-DuePayableAmount-XXX</ram:DuePayableAmount>
       </ram:SpecifiedTradeSettlementHeaderMonetarySummation>
     
     </ram:ApplicableHeaderTradeSettlement>
