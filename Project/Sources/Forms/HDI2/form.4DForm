@@ -87,7 +87,7 @@
 			"objects": {
 				"Rectangle1": {
 					"type": "rectangle",
-					"top": 397,
+					"top": 407,
 					"left": 39,
 					"width": 500,
 					"height": 190,
@@ -98,7 +98,7 @@
 				"Texte1": {
 					"type": "text",
 					"text": "Factur-x (xml)",
-					"top": 380,
+					"top": 390,
 					"left": 150,
 					"width": 390,
 					"height": 16,
@@ -113,28 +113,6 @@
 					"height": 190,
 					"borderRadius": 16,
 					"strokeWidth": 3
-				},
-				"label_name": {
-					"type": "text",
-					"text": "Template name:",
-					"top": 127,
-					"left": 1379,
-					"width": 115,
-					"height": 17,
-					"sizingX": "fixed",
-					"textAlign": "right",
-					"sizingY": "fixed"
-				},
-				"field_name": {
-					"type": "input",
-					"dataSource": "[Templates:2]name:2",
-					"top": 127,
-					"left": 1499,
-					"width": 260,
-					"height": 17,
-					"fontWeight": "bold",
-					"sizingX": "fixed",
-					"sizingY": "fixed"
 				},
 				"field_context": {
 					"type": "input",
@@ -155,7 +133,7 @@
 					"top": 60,
 					"left": 560,
 					"width": 600,
-					"height": 720,
+					"height": 660,
 					"sizingX": "grow",
 					"sizingY": "grow",
 					"dataSource": "Form:C1466.template",
@@ -176,45 +154,10 @@
 					"showVerticalRuler": false,
 					"zoom": "75"
 				},
-				"Button": {
-					"type": "button",
-					"top": 918,
-					"left": 1220,
-					"width": 70,
-					"height": 20,
-					"sizingX": "move",
-					"sizingY": "move",
-					"dataSource": "Button",
-					"action": "cancel",
-					"shortcutKey": "[Esc]",
-					"text": "Cancel",
-					"events": [
-						"onClick"
-					],
-					"focusable": false
-				},
-				"Button1": {
-					"type": "button",
-					"top": 918,
-					"left": 1300,
-					"width": 70,
-					"height": 20,
-					"sizingX": "move",
-					"sizingY": "move",
-					"dataSource": "Button",
-					"action": "accept",
-					"shortcutKey": "[Enter]",
-					"text": "OK",
-					"defaultButton": true,
-					"events": [
-						"onClick"
-					],
-					"focusable": false
-				},
 				"field_context1": {
 					"type": "input",
 					"dataSource": "Form:C1466.xml",
-					"top": 405,
+					"top": 415,
 					"left": 50,
 					"width": 465,
 					"height": 175,
@@ -227,7 +170,7 @@
 				"btnExportXML": {
 					"type": "button",
 					"text": "Export XML",
-					"top": 604,
+					"top": 614,
 					"left": 100,
 					"width": 200,
 					"height": 20,
@@ -253,7 +196,7 @@
 				"btnExportFacturx": {
 					"type": "button",
 					"text": "Export factur-X / ZUGFeRD",
-					"top": 679,
+					"top": 699,
 					"left": 100,
 					"width": 200,
 					"height": 20,
@@ -276,7 +219,7 @@
 				},
 				"Image statique2": {
 					"type": "picture",
-					"top": 349,
+					"top": 359,
 					"left": 426,
 					"width": 64,
 					"height": 74,
@@ -300,7 +243,7 @@
 				"btnValidateXML": {
 					"type": "button",
 					"text": "XML Validation web site (*)",
-					"top": 605,
+					"top": 615,
 					"left": 317,
 					"width": 222,
 					"height": 20,
@@ -348,7 +291,7 @@
 				"btnBuildXML": {
 					"type": "button",
 					"text": "Build XML Profile",
-					"top": 355,
+					"top": 365,
 					"left": 100,
 					"width": 150,
 					"height": 20,
@@ -386,7 +329,7 @@
 				"btnValidateFacturx": {
 					"type": "button",
 					"text": "XML Validation web site(*)",
-					"top": 680,
+					"top": 700,
 					"left": 317,
 					"width": 222,
 					"height": 20,
@@ -399,7 +342,7 @@
 				},
 				"Rectangle2": {
 					"type": "rectangle",
-					"top": 675,
+					"top": 695,
 					"left": 40,
 					"width": 50,
 					"height": 30,
@@ -410,7 +353,7 @@
 				},
 				"Rectangle3": {
 					"type": "rectangle",
-					"top": 600,
+					"top": 610,
 					"left": 40,
 					"width": 50,
 					"height": 30,
@@ -421,7 +364,7 @@
 				},
 				"Rectangle4": {
 					"type": "rectangle",
-					"top": 350,
+					"top": 360,
 					"left": 40,
 					"width": 50,
 					"height": 30,
@@ -478,7 +421,7 @@
 				"Texte5": {
 					"type": "text",
 					"text": "3",
-					"top": 353,
+					"top": 363,
 					"left": 52,
 					"width": 27,
 					"height": 24,
@@ -491,7 +434,7 @@
 				"Texte3": {
 					"type": "text",
 					"text": "{4}",
-					"top": 603,
+					"top": 613,
 					"left": 52,
 					"width": 27,
 					"height": 24,
@@ -505,7 +448,7 @@
 				"Texte6": {
 					"type": "text",
 					"text": "5",
-					"top": 678,
+					"top": 698,
 					"left": 52,
 					"width": 27,
 					"height": 24,
@@ -519,7 +462,7 @@
 				"Text2": {
 					"type": "text",
 					"text": "Note : this stage is not mandatory here but is highly recommanded in your own developments in order to check the validity of the profile.",
-					"top": 630,
+					"top": 640,
 					"left": 105,
 					"width": 430,
 					"height": 36,
@@ -530,12 +473,34 @@
 				"Text3": {
 					"type": "text",
 					"text": "(*) This website needs a free registration to validate XML profiles and factur-x /SUGFeER files.",
-					"top": 720,
+					"top": 740,
 					"left": 105,
 					"width": 430,
 					"height": 36,
 					"textDecoration": "none",
 					"fontStyle": "italic",
+					"sizingY": "move"
+				},
+				"Text4": {
+					"type": "text",
+					"text": "(based on the same context)",
+					"top": 367,
+					"left": 260,
+					"width": 190,
+					"height": 16
+				},
+				"btnTrace": {
+					"type": "checkbox",
+					"text": "Trace code",
+					"top": 740,
+					"left": 1023,
+					"width": 137,
+					"height": 20,
+					"events": [
+						"onClick"
+					],
+					"dataSource": "Form:C1466.trace",
+					"sizingX": "move",
 					"sizingY": "move"
 				}
 			}
@@ -552,5 +517,5 @@
 			"View 1": {}
 		}
 	},
-	"geometryStamp": 1457
+	"geometryStamp": 1527
 }

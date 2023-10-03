@@ -9,7 +9,7 @@ Case of
 		
 		WParea:=ds:C1482.INFO.all().first().wp
 		
-		Form:C1466.trace:=True:C214
+		Form:C1466.trace:=False:C215
 		
 		Form:C1466.xmlFile:=File:C1566(Folder:C1567(fk database folder:K87:14).path+"facturxml.xml")
 		If (Form:C1466.xmlFile.exists)
