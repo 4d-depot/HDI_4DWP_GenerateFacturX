@@ -3,11 +3,12 @@
 
 var $c; $item; $tax : Object
 
-[Invoice:3]context:3:={}
-$c:=[Invoice:3]context:3
 
 Case of 
-	: ([Invoice:3]name:2="French sample")
+	: ([Invoices:3]name:2="French sample")
+		
+		[Invoices:3]context:3:={}
+		$c:=[Invoices:3]context:3
 		
 		$c.invoice:=New object:C1471
 		$c.invoice.ID:="AC-2023-1234"
@@ -112,9 +113,13 @@ Case of
 		$tax.calculatedAmount:=6.6
 		$c.tradeTaxes.push($tax)
 		
-	: ([Templates:2]name:2="German sample")
+	: ([Invoices:3]name:2="German sample")
 		
-		ALERT:C41("must be filled")
+		$c:=[Invoices:3]context:3
+		
+		$c:=[Invoices:3]context:3
+		$c.invoice.date:=!2023-08-31!
+		$c.invoice.dueDate:=!2023-09-30!
 		
 	Else 
 		ALERT:C41("Only french and german samples so far…")
