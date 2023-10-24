@@ -152,7 +152,9 @@
 					],
 					"showHorizontalRuler": false,
 					"showVerticalRuler": false,
-					"zoom": "75"
+					"zoom": "75",
+					"enterable": false,
+					"focusable": false
 				},
 				"field_context1": {
 					"type": "input",
@@ -227,7 +229,7 @@
 				},
 				"btnSetContext": {
 					"type": "button",
-					"text": "Set context",
+					"text": "Set data context",
 					"top": 315,
 					"left": 100,
 					"width": 150,
@@ -461,18 +463,18 @@
 				},
 				"Text2": {
 					"type": "text",
-					"text": "Note : this stage is not mandatory here but is highly recommanded in your own developments in order to check the validity of the profile.",
+					"text": "Note : this step is not mandatory but is highly recommanded to check the validity of the generated XML for your future developments.",
 					"top": 640,
 					"left": 105,
 					"width": 430,
-					"height": 36,
+					"height": 46,
 					"textDecoration": "none",
 					"fontStyle": "italic",
 					"sizingY": "move"
 				},
 				"Text3": {
 					"type": "text",
-					"text": "(*) This website needs a free registration to validate XML profiles and factur-x /SUGFeER files.",
+					"text": "(*) This website needs a free registration to validate XML profiles and factur-x /SUGFeER invoices.",
 					"top": 740,
 					"left": 105,
 					"width": 430,
@@ -517,5 +519,5 @@
 			"View 1": {}
 		}
 	},
-	"geometryStamp": 1527
+	"geometryStamp": 1529
 }
