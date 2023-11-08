@@ -32,6 +32,7 @@ Case of
 		$options.facturX:={}
 		$options.facturX.profile:="RECHNUNG"  // "guessed" from XML so, no need to fill
 		$options.facturX.version:="2.1"
+		
 		$fileInfo.name:="rechnung.xml"
 		$fileInfo.description:="Factur-X/ZUGFeRD Invoice"
 		$fileInfo.mimeType:="text/xml"
