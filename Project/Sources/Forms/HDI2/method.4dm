@@ -15,6 +15,7 @@ Case of
 		If (Form:C1466.xmlFile.exists)
 			Form:C1466.xmlFile.delete()
 		End if 
+		
 		Form:C1466.facturxFile:=File:C1566(Folder:C1567(fk database folder:K87:14).path+"facturxSample.pdf")
 		If (Form:C1466.facturxFile.exists)
 			Form:C1466.facturxFile.delete()
@@ -24,7 +25,9 @@ Case of
 		Form:C1466.xml:=""
 		Form:C1466.contextSet:=False:C215
 		
-		Form:C1466.validationURL:="https://services.fnfe-mpe.org/account/home"
+		Form:C1466.validationXML:="https://services.fnfe-mpe.org/account/home"
+		Form:C1466.validationPDF:="https://demo.verapdf.org"
+		Form:C1466.templateLanguage:=""  // french or german later
 		
 		SET TIMER:C645(-1)
 		
