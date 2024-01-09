@@ -29,7 +29,7 @@ $col.push({xpath: "rsm:SupplyChainTradeTransaction/ram:ApplicableHeaderTradeAgre
 $col.push({xpath: "rsm:SupplyChainTradeTransaction/ram:ApplicableHeaderTradeAgreement/ram:SellerTradeParty/ram:SpecifiedTaxRegistration/ram:ID"; value: $context.seller.tva})
 
 
-$col.push({xpath: "rsm:SupplyChainTradeTransaction/ram:ApplicableHeaderTradeAgreement/ram:BuyerTradeParty/ram:Name"; value: $context.seller.name})
+$col.push({xpath: "rsm:SupplyChainTradeTransaction/ram:ApplicableHeaderTradeAgreement/ram:BuyerTradeParty/ram:Name"; value: $context.buyer.name})
 $col.push({xpath: "rsm:SupplyChainTradeTransaction/ram:ApplicableHeaderTradeAgreement/ram:BuyerTradeParty/ram:SpecifiedLegalOrganization/ram:ID"; value: $context.buyer.siret})
 $col.push({xpath: "rsm:SupplyChainTradeTransaction/ram:ApplicableHeaderTradeAgreement/ram:BuyerTradeParty/ram:PostalTradeAddress/ram:PostcodeCode"; value: $context.buyer.zipCode})
 $col.push({xpath: "rsm:SupplyChainTradeTransaction/ram:ApplicableHeaderTradeAgreement/ram:BuyerTradeParty/ram:PostalTradeAddress/ram:LineOne"; value: $context.buyer.address})
