@@ -20,6 +20,9 @@ $col:=New collection:C1472()
 $col.push({xpath: "rsm:ExchangedDocument/ram:ID"; value: $context.invoice.ID})
 $col.push({xpath: "rsm:ExchangedDocument/ram:IncludedNote/ram:Content"; value: $context.invoice.content})
 
+$valueString:=String:C10(Year of:C25($context.invoice.date); "0000")+String:C10(Month of:C24($context.invoice.date); "00")+String:C10(Day of:C23($context.invoice.date); "00")
+$col.push({xpath: "rsm:ExchangedDocument/ram:IssueDateTime/udt:DateTimeString"; value: $valueString})
+
 $col.push({xpath: "rsm:SupplyChainTradeTransaction/ram:ApplicableHeaderTradeAgreement/ram:SellerTradeParty/ram:Name"; value: $context.seller.name})
 $col.push({xpath: "rsm:SupplyChainTradeTransaction/ram:ApplicableHeaderTradeAgreement/ram:SellerTradeParty/ram:SpecifiedLegalOrganization/ram:ID"; value: $context.seller.siret})
 $col.push({xpath: "rsm:SupplyChainTradeTransaction/ram:ApplicableHeaderTradeAgreement/ram:SellerTradeParty/ram:PostalTradeAddress/ram:PostcodeCode"; value: $context.seller.zipCode})
