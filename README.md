@@ -1,6 +1,6 @@
 #  HDI_4DWP_GenerateFacturX
 
-Generate a factur-x/ZUGFeRD document (4D v20 R4)
+Generate a factur-x/ZUGFeRD document with [4D Write Pro](https://us.4d.com/4D-write-pro) (4D v20 R4)
 
 Find more information on the [blog post](https://blog.4d.com/4d-write-pro-electronic-invoice-generation/).
 
